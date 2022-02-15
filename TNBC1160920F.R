@@ -48,4 +48,4 @@ head(intero$interaction)
 result <- Pvalue(intero)
 head(result$interaction)
 
-# write.csv(result$interaction[,c("PBII","Pvalue")], file = "1160920F_topInteractionsTNBC_cytokine_or_chemokine.csv", row.names = FALSE)
+# write.csv(result$interaction[,c("PBII","Pvalue")], file = "1160920F_topInteractionsTNBC_cytokine_or_chemokine.csv")

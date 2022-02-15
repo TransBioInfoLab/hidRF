@@ -44,7 +44,7 @@ head(intero$interaction)
 
 result <- Pvalue(intero)
 head(result$interaction)
-# write.csv(result$interaction[,c("PBII","Pvalue")], file = "1142243F_topInteractionsTNBC_cytokine_or_chemokine.csv", row.names = FALSE)
+# write.csv(result$interaction[,c("PBII","Pvalue")], file = "1142243F_topInteractionsTNBC_cytokine_or_chemokine.csv")
 
 ################################################
 ### Model Comparison: iRF
@@ -54,5 +54,5 @@ o2 <- iRF(x = as.matrix(dat2[,-1]), y = dat2[, 1],
           interactions.return=TRUE)
 o2$interaction
 
-# write.csv(o2$interaction[[1]], file = "iRF1142243F_topInteractionsTNBC_cytokine_or_chemokine.csv", row.names = FALSE)
+# write.csv(o2$interaction[[1]], file = "iRF1142243F_topInteractionsTNBC_cytokine_or_chemokine.csv")
 
