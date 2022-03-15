@@ -32,7 +32,8 @@ intero$rf.obj
 sel <- intero[[1]]$var.sl
 # write.csv(sel, file = "1160920F_majorSingnalTNBC_cytokine_or_chemokine.csv", row.names = FALSE)
 
-dat2 = x[,c("y", sel)]
+dat2 = x[,c(paste("y", 1:12, sep =""), sel)]
+
 rm(intero)
 gc()
 
