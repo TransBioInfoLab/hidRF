@@ -25,7 +25,7 @@ for (i in 1:12){
 ################################################
 formula <- as.formula(paste("cbind(",paste(yname,collapse = ","),")~.", collapse = ""))
 intero <- hidRF(formula, data = x, subRF = TRUE,
-                 itrSub = 10,
+                nSubRF = 10,
                  var.sel.only = TRUE)
 intero$rf.obj
 

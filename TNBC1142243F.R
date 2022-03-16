@@ -21,7 +21,7 @@ x$y <- x$y/(log(25)+1)
 ################################################
 formula <- as.formula(y~.)
 intero <- hidRF(formula, data = x, subRF = TRUE,
-                itrSub = 10,
+                nSubRF = 10,
                 var.sel.only = TRUE)
 intero$rf.obj
 
