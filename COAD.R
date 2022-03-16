@@ -22,7 +22,7 @@ write.csv(sel, file = "COADmajorSingnal.csv")
 ### Step 2-3: interaction selection
 ################################################
 intero <- hidRF(Surv(PFI.time, PFI) ~ ., data = dat2, 
-                terms = 6, block = 1,
+                terms = 5, block = 1,
                 subRF = FALSE,
                 forest.tune = TRUE)
 intero$rf.obj
